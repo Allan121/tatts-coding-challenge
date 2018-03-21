@@ -24,7 +24,6 @@ class MockServerAPI: ServerAPI {
     }
     
     func mockCompanyList() -> [Company] {
-        
         let company1 = Company(companyDict: [kCompanyIdKey : "id1", kCompanyNameKey : "name1", kCompanyDescriptionKey : "description1", kCompanyLogoUrlKey : "url1"])
         let company2 = Company(companyDict: [kCompanyIdKey : "id2", kCompanyNameKey : "name2", kCompanyDescriptionKey : "description2", kCompanyLogoUrlKey : "url2"])
         
@@ -47,7 +46,6 @@ class CompanyListViewModelTests: XCTestCase {
     }
     
     override func tearDown() {
-        
         mockServerAPI = nil
         
         viewModel = nil
@@ -79,16 +77,20 @@ class CompanyListViewModelTests: XCTestCase {
         //THEN
         viewModel.companies.observeNext { (companies) in
             
-            if companies as! [Company] == self.mockServerAPI.mockCompanyList() {
+            if let companies = companies, companies == self.mockServerAPI.mockCompanyList() {
                 companyListExpectation.fulfill()
             }
             
         }.dispose(in: bag)
         
         waitForExpectations(timeout: 3.0) { (error) in
-            
-            XCTAssertTrue(self.mockServerAPI.getCompanyListCalled)
-            XCTAssertEqual(self.viewModel.companies.value as! [Company], self.mockServerAPI.mockCompanyList())
+            if let error = error {
+                XCTFail("Unexpected error: \(error)")
+                return
+            } else if let companies = self.viewModel.companies.value {
+                XCTAssertTrue(self.mockServerAPI.getCompanyListCalled)
+                XCTAssertEqual(companies, self.mockServerAPI.mockCompanyList())
+            }
         }
     }
     
@@ -110,7 +112,12 @@ class CompanyListViewModelTests: XCTestCase {
         let numRows = viewModel.numberOfRows(forSection: 0)
         
         //THEN
-        XCTAssertTrue(numRows == viewModel.companies.value.count)
+        guard let companies = viewModel.companies.value else {
+            XCTFail("Missing companies.")
+            return
+        }
+        
+        XCTAssertEqual(numRows, companies.count)
     }
     
     func test_companyViewModelForIndex_correctCompanyViewModelReturned() {
@@ -124,8 +131,8 @@ class CompanyListViewModelTests: XCTestCase {
         //THEN
         let mockCompany = mockServerAPI.mockCompanyList()[0]
         
-        XCTAssertEqual(companyViewModel.companyName(), mockCompany.companyName)
-        XCTAssertEqual(companyViewModel.companyDescription(), mockCompany.companyDescription)
-        XCTAssertEqual(companyViewModel.companyLogo(), mockCompany.companyLogoUrl)
+        XCTAssertEqual(companyViewModel?.companyName(), mockCompany.companyName)
+        XCTAssertEqual(companyViewModel?.companyDescription(), mockCompany.companyDescription)
+        XCTAssertEqual(companyViewModel?.companyLogo(), mockCompany.companyLogoUrl)
     }
 }

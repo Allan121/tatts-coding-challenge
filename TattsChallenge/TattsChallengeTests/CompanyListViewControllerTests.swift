@@ -97,9 +97,9 @@ class CompanyListViewControllerTests: XCTestCase {
         let mockCompany = mockViewModel.mockCompany()
         
         XCTAssertTrue(cell.isKind(of: CompanyTableViewCell.self))
-        XCTAssertEqual(cell.viewModel.companyName(), mockCompany.companyName)
-        XCTAssertEqual(cell.viewModel.companyDescription(), mockCompany.companyDescription)
-        XCTAssertEqual(cell.viewModel.companyLogo(), mockCompany.companyLogoUrl)
+        XCTAssertEqual(cell.viewModel?.companyName(), mockCompany.companyName)
+        XCTAssertEqual(cell.viewModel?.companyDescription(), mockCompany.companyDescription)
+        XCTAssertEqual(cell.viewModel?.companyLogo(), mockCompany.companyLogoUrl)
     }
     
     func test_viewForHeaderInSection_headerHasCorrectTitle() {
