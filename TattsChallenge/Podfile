@@ -1,0 +1,15 @@
+# platform :ios, ’10.0’
+
+target 'TattsChallenge' do
+  use_frameworks!
+
+  pod 'PromiseKit/OMGHTTPURLRQ'
+  pod 'SDWebImage', '~>3.8'
+  pod 'Bond'
+
+  target 'TattsChallengeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

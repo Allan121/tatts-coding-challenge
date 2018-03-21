@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		747224A9D9CDCA6247E627F4 /* Pods_TattsChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51123FFC4A092B6CBD46BEEC /* Pods_TattsChallengeTests.framework */; };
+		781F63794FE13B7D0A3CBD79 /* Pods_TattsChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E611C2EFCC91ABB10B6680 /* Pods_TattsChallenge.framework */; };
+		FB8097F71F1EE133001222CC /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8097F61F1EE133001222CC /* Company.swift */; };
+		FBA0E2461F1F37E80026015E /* CompanyListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0E2451F1F37E80026015E /* CompanyListViewModelTests.swift */; };
+		FBA0E2481F1F47120026015E /* CompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0E2471F1F47120026015E /* CompanyViewModel.swift */; };
+		FBA0E24A1F1F49250026015E /* CompanyListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0E2491F1F49250026015E /* CompanyListViewControllerTests.swift */; };
+		FBA0E24C1F1F52000026015E /* CompanyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA0E24B1F1F52000026015E /* CompanyViewModelTests.swift */; };
+		FBD25D6A1F1EF4AE0022655A /* CompanyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD25D691F1EF4AE0022655A /* CompanyListViewModel.swift */; };
+		FBDB781F1F1ECD0800C37C2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB781E1F1ECD0800C37C2D /* AppDelegate.swift */; };
+		FBDB78211F1ECD0800C37C2D /* CompanyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB78201F1ECD0800C37C2D /* CompanyListViewController.swift */; };
+		FBDB78241F1ECD0800C37C2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDB78221F1ECD0800C37C2D /* Main.storyboard */; };
+		FBDB78261F1ECD0800C37C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDB78251F1ECD0800C37C2D /* Assets.xcassets */; };
+		FBDB78291F1ECD0800C37C2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDB78271F1ECD0800C37C2D /* LaunchScreen.storyboard */; };
+		FBDB78401F1ED05D00C37C2D /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB783E1F1ED05C00C37C2D /* CompanyTableViewCell.swift */; };
+		FBDB78411F1ED05D00C37C2D /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDB783F1F1ED05D00C37C2D /* CompanyTableViewCell.xib */; };
+		FBDB78441F1ED85D00C37C2D /* GenericHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB78421F1ED85D00C37C2D /* GenericHeaderTableViewCell.swift */; };
+		FBDB78451F1ED85D00C37C2D /* GenericHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDB78431F1ED85D00C37C2D /* GenericHeaderTableViewCell.xib */; };
+		FBF1CE201F1EE40B0083BBD3 /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1CE1F1F1EE40B0083BBD3 /* ServerAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBDB78301F1ECD0800C37C2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBDB78131F1ECD0800C37C2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDB781A1F1ECD0800C37C2D;
+			remoteInfo = TattsChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B7BD29E987BB2FFAEB73CF2 /* Pods-TattsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TattsChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TattsChallengeTests/Pods-TattsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		51123FFC4A092B6CBD46BEEC /* Pods_TattsChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TattsChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61ED6852905D271F2497DF46 /* Pods-TattsChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TattsChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TattsChallenge/Pods-TattsChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		AF18A33E1B5D8D1A58789E48 /* Pods-TattsChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TattsChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TattsChallenge/Pods-TattsChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		C4E611C2EFCC91ABB10B6680 /* Pods_TattsChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TattsChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48E9ADE2B0C463C98E8184C /* Pods-TattsChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TattsChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TattsChallengeTests/Pods-TattsChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB8097F61F1EE133001222CC /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		FBA0E2451F1F37E80026015E /* CompanyListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyListViewModelTests.swift; sourceTree = "<group>"; };
+		FBA0E2471F1F47120026015E /* CompanyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewModel.swift; sourceTree = "<group>"; };
+		FBA0E2491F1F49250026015E /* CompanyListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyListViewControllerTests.swift; sourceTree = "<group>"; };
+		FBA0E24B1F1F52000026015E /* CompanyViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewModelTests.swift; sourceTree = "<group>"; };
+		FBD25D691F1EF4AE0022655A /* CompanyListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyListViewModel.swift; sourceTree = "<group>"; };
+		FBDB781B1F1ECD0800C37C2D /* TattsChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TattsChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDB781E1F1ECD0800C37C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBDB78201F1ECD0800C37C2D /* CompanyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListViewController.swift; sourceTree = "<group>"; };
+		FBDB78231F1ECD0800C37C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBDB78251F1ECD0800C37C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBDB78281F1ECD0800C37C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBDB782A1F1ECD0800C37C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDB782F1F1ECD0800C37C2D /* TattsChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TattsChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDB78351F1ECD0800C37C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDB783E1F1ED05C00C37C2D /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		FBDB783F1F1ED05D00C37C2D /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
+		FBDB78421F1ED85D00C37C2D /* GenericHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		FBDB78431F1ED85D00C37C2D /* GenericHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		FBF1CE1F1F1EE40B0083BBD3 /* ServerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBDB78181F1ECD0800C37C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781F63794FE13B7D0A3CBD79 /* Pods_TattsChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB782C1F1ECD0800C37C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747224A9D9CDCA6247E627F4 /* Pods_TattsChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35DE19A1CE1A9CBABC5475E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4E611C2EFCC91ABB10B6680 /* Pods_TattsChallenge.framework */,
+				51123FFC4A092B6CBD46BEEC /* Pods_TattsChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77FD2110EE62867898AFB3B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF18A33E1B5D8D1A58789E48 /* Pods-TattsChallenge.debug.xcconfig */,
+				61ED6852905D271F2497DF46 /* Pods-TattsChallenge.release.xcconfig */,
+				F48E9ADE2B0C463C98E8184C /* Pods-TattsChallengeTests.debug.xcconfig */,
+				2B7BD29E987BB2FFAEB73CF2 /* Pods-TattsChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBA0E2421F1F33F50026015E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB8097F61F1EE133001222CC /* Company.swift */,
+				FBF1CE1F1F1EE40B0083BBD3 /* ServerAPI.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FBA0E2431F1F33FD0026015E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB78221F1ECD0800C37C2D /* Main.storyboard */,
+				FBDB78201F1ECD0800C37C2D /* CompanyListViewController.swift */,
+				FBDB783E1F1ED05C00C37C2D /* CompanyTableViewCell.swift */,
+				FBDB783F1F1ED05D00C37C2D /* CompanyTableViewCell.xib */,
+				FBDB78421F1ED85D00C37C2D /* GenericHeaderTableViewCell.swift */,
+				FBDB78431F1ED85D00C37C2D /* GenericHeaderTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FBA0E2441F1F34020026015E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FBD25D691F1EF4AE0022655A /* CompanyListViewModel.swift */,
+				FBA0E2471F1F47120026015E /* CompanyViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FBA0E24D1F1F57020026015E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB78251F1ECD0800C37C2D /* Assets.xcassets */,
+				FBDB78271F1ECD0800C37C2D /* LaunchScreen.storyboard */,
+				FBDB782A1F1ECD0800C37C2D /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FBDB78121F1ECD0800C37C2D = {
+			isa = PBXGroup;
+			children = (
+				FBDB781D1F1ECD0800C37C2D /* TattsChallenge */,
+				FBDB78321F1ECD0800C37C2D /* TattsChallengeTests */,
+				FBDB781C1F1ECD0800C37C2D /* Products */,
+				77FD2110EE62867898AFB3B2 /* Pods */,
+				35DE19A1CE1A9CBABC5475E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDB781C1F1ECD0800C37C2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB781B1F1ECD0800C37C2D /* TattsChallenge.app */,
+				FBDB782F1F1ECD0800C37C2D /* TattsChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBDB781D1F1ECD0800C37C2D /* TattsChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB781E1F1ECD0800C37C2D /* AppDelegate.swift */,
+				FBA0E2421F1F33F50026015E /* Model */,
+				FBA0E2431F1F33FD0026015E /* View */,
+				FBA0E2441F1F34020026015E /* ViewModel */,
+				FBA0E24D1F1F57020026015E /* Resources */,
+			);
+			path = TattsChallenge;
+			sourceTree = "<group>";
+		};
+		FBDB78321F1ECD0800C37C2D /* TattsChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB78351F1ECD0800C37C2D /* Info.plist */,
+				FBA0E2451F1F37E80026015E /* CompanyListViewModelTests.swift */,
+				FBA0E2491F1F49250026015E /* CompanyListViewControllerTests.swift */,
+				FBA0E24B1F1F52000026015E /* CompanyViewModelTests.swift */,
+			);
+			path = TattsChallengeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBDB781A1F1ECD0800C37C2D /* TattsChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDB78381F1ECD0800C37C2D /* Build configuration list for PBXNativeTarget "TattsChallenge" */;
+			buildPhases = (
+				AA413B2A5EB3B4C61AF7DF57 /* [CP] Check Pods Manifest.lock */,
+				FBDB78171F1ECD0800C37C2D /* Sources */,
+				FBDB78181F1ECD0800C37C2D /* Frameworks */,
+				FBDB78191F1ECD0800C37C2D /* Resources */,
+				58B28F54950BD159EFC19401 /* [CP] Embed Pods Frameworks */,
+				AFADB52511BA8BF34DEF1CF4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TattsChallenge;
+			productName = TattsChallenge;
+			productReference = FBDB781B1F1ECD0800C37C2D /* TattsChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBDB782E1F1ECD0800C37C2D /* TattsChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDB783B1F1ECD0800C37C2D /* Build configuration list for PBXNativeTarget "TattsChallengeTests" */;
+			buildPhases = (
+				F2ABEA58F8B1DA27C56E2DA6 /* [CP] Check Pods Manifest.lock */,
+				FBDB782B1F1ECD0800C37C2D /* Sources */,
+				FBDB782C1F1ECD0800C37C2D /* Frameworks */,
+				FBDB782D1F1ECD0800C37C2D /* Resources */,
+				52F1A7B92053142A84C359D3 /* [CP] Embed Pods Frameworks */,
+				D0E2FBFB9A58350D2318ED52 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBDB78311F1ECD0800C37C2D /* PBXTargetDependency */,
+			);
+			name = TattsChallengeTests;
+			productName = TattsChallengeTests;
+			productReference = FBDB782F1F1ECD0800C37C2D /* TattsChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBDB78131F1ECD0800C37C2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Allan Poole";
+				TargetAttributes = {
+					FBDB781A1F1ECD0800C37C2D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					FBDB782E1F1ECD0800C37C2D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FBDB781A1F1ECD0800C37C2D;
+					};
+				};
+			};
+			buildConfigurationList = FBDB78161F1ECD0800C37C2D /* Build configuration list for PBXProject "TattsChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBDB78121F1ECD0800C37C2D;
+			productRefGroup = FBDB781C1F1ECD0800C37C2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBDB781A1F1ECD0800C37C2D /* TattsChallenge */,
+				FBDB782E1F1ECD0800C37C2D /* TattsChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBDB78191F1ECD0800C37C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDB78291F1ECD0800C37C2D /* LaunchScreen.storyboard in Resources */,
+				FBDB78261F1ECD0800C37C2D /* Assets.xcassets in Resources */,
+				FBDB78241F1ECD0800C37C2D /* Main.storyboard in Resources */,
+				FBDB78451F1ED85D00C37C2D /* GenericHeaderTableViewCell.xib in Resources */,
+				FBDB78411F1ED05D00C37C2D /* CompanyTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB782D1F1ECD0800C37C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52F1A7B92053142A84C359D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TattsChallengeTests/Pods-TattsChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58B28F54950BD159EFC19401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TattsChallenge/Pods-TattsChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA413B2A5EB3B4C61AF7DF57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFADB52511BA8BF34DEF1CF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TattsChallenge/Pods-TattsChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E2FBFB9A58350D2318ED52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TattsChallengeTests/Pods-TattsChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2ABEA58F8B1DA27C56E2DA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBDB78171F1ECD0800C37C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF1CE201F1EE40B0083BBD3 /* ServerAPI.swift in Sources */,
+				FBDB78441F1ED85D00C37C2D /* GenericHeaderTableViewCell.swift in Sources */,
+				FBDB78211F1ECD0800C37C2D /* CompanyListViewController.swift in Sources */,
+				FBDB78401F1ED05D00C37C2D /* CompanyTableViewCell.swift in Sources */,
+				FBA0E2481F1F47120026015E /* CompanyViewModel.swift in Sources */,
+				FB8097F71F1EE133001222CC /* Company.swift in Sources */,
+				FBD25D6A1F1EF4AE0022655A /* CompanyListViewModel.swift in Sources */,
+				FBDB781F1F1ECD0800C37C2D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB782B1F1ECD0800C37C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA0E24C1F1F52000026015E /* CompanyViewModelTests.swift in Sources */,
+				FBA0E24A1F1F49250026015E /* CompanyListViewControllerTests.swift in Sources */,
+				FBA0E2461F1F37E80026015E /* CompanyListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBDB78311F1ECD0800C37C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBDB781A1F1ECD0800C37C2D /* TattsChallenge */;
+			targetProxy = FBDB78301F1ECD0800C37C2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBDB78221F1ECD0800C37C2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDB78231F1ECD0800C37C2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBDB78271F1ECD0800C37C2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDB78281F1ECD0800C37C2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBDB78361F1ECD0800C37C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBDB78371F1ECD0800C37C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBDB78391F1ECD0800C37C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF18A33E1B5D8D1A58789E48 /* Pods-TattsChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TattsChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = allanpoole.TattsChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FBDB783A1F1ECD0800C37C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61ED6852905D271F2497DF46 /* Pods-TattsChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TattsChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = allanpoole.TattsChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FBDB783C1F1ECD0800C37C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F48E9ADE2B0C463C98E8184C /* Pods-TattsChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TattsChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = allanpoole.TattsChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TattsChallenge.app/TattsChallenge";
+			};
+			name = Debug;
+		};
+		FBDB783D1F1ECD0800C37C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B7BD29E987BB2FFAEB73CF2 /* Pods-TattsChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TattsChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = allanpoole.TattsChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TattsChallenge.app/TattsChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBDB78161F1ECD0800C37C2D /* Build configuration list for PBXProject "TattsChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDB78361F1ECD0800C37C2D /* Debug */,
+				FBDB78371F1ECD0800C37C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDB78381F1ECD0800C37C2D /* Build configuration list for PBXNativeTarget "TattsChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDB78391F1ECD0800C37C2D /* Debug */,
+				FBDB783A1F1ECD0800C37C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDB783B1F1ECD0800C37C2D /* Build configuration list for PBXNativeTarget "TattsChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDB783C1F1ECD0800C37C2D /* Debug */,
+				FBDB783D1F1ECD0800C37C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBDB78131F1ECD0800C37C2D /* Project object */;
+}
