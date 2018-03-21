@@ -17,7 +17,7 @@ In this assignment you will be using JSON feed to read lotteries Jurisdictions/C
 
 Use the following as an example, but don't be constrained by our design or implementation choice.  The example below was taken from our IOS app, use the appropriate design idiom of your chosen plaform.
 
-![Sample List](images/ios.png)
+![Sample List](ios.png)
 
 ## Requirements (IOS)
 
