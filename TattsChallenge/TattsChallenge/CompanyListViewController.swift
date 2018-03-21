@@ -114,6 +114,7 @@ class CompanyListViewController: UITableViewController {
         } else {
             
             let refreshButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.refresh, target: self, action: #selector(refreshCompanyList))
+            refreshButton.tintColor = UIColor.purple
             self.navigationItem.rightBarButtonItem = refreshButton
         }
     }
